@@ -19,6 +19,7 @@ function greater(){
     return number > 100 ? 'veci od 100' : 'manji od 10';
 }
 
+
 greet();
 console.log(isPrime());
-console.log(greater());
+console.log(greater()); 
