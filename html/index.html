@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,19 +8,29 @@
     <meta name="author" content="Josip Čeprnić" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tilt Warp"
+    />
+
     <title>Lorem ipsum</title>
   </head>
-  
+
   <body>
-    <img src="../images/fruits.jpg" class="cover-img" />
-      <nav>
-        <a href="index.html">Index</a>
-        <a href="proizvodi.html">Proizvodi</a> 
-        <a href="https://www.lipsum.com">Lorem Ipsum</a>
-      </nav>
-    <h1>Lorem ipsum tekst</h1>
+    <nav>
+      <a href="index.html">Index</a>
+      <a href="proizvodi.html">Proizvodi</a>
+      <a href="https://www.lipsum.com">Lorem Ipsum</a>
+    </nav>
+    <div><img src="../images/fruits.jpg" id="header" /></div>
+    <div class="center-text"><p>Jedite zdravo, živite dugo!</p></div>
+    <div><img src="../images/apple.png" id="apple" /></div>
+
+   
 
     <main>
+      <div class ="left">
+      <h1>Lorem ipsum tekst</h1>
       <article>
         <h2>Lorem ipsum prvi paragraf</h2>
         <p>
@@ -40,6 +50,7 @@
           nisi labore culpa.
         </p>
       </article>
+    </div>
       <article>
         <h2>Lorem ipsum drugi paragraf</h2>
         <p>
@@ -54,6 +65,7 @@
           Aute labore incididunt Lorem commodo enim.
         </p>
       </article>
+      <div class ="right">
       <article>
         <h2>Lorem ipsum treci paragraf</h2>
         <p>
@@ -91,12 +103,14 @@
           incididunt cupidatat. In Lorem tempor adipisicing duis adipisicing.-->
         </p>
       </article>
+    </div>
       <ol>
         <li>prvo</li>
         <li>drugo</li>
         <li>trece</li>
       </ol>
       <!-- <script src="../js/prvi.js"></script> -->
+      <script src="../js/jabuka.js"></script>
     </main>
     <footer>&copy; Copyright Josip Čeprnić</footer>
   </body>
