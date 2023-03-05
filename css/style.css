@@ -2,7 +2,7 @@ body,
 html {
   background-color: #edeed4;
   font-family: Arial, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 nav {
@@ -67,14 +67,11 @@ nav a:active {
   transform: translate(-50%, -90%);
   z-index: 0;
   color: #edeed4;
-  text-align: center;
-  font-family: Tilt Warp;
-  font-size: 40px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .center-text {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -90%);
     z-index: 1;
@@ -87,10 +84,57 @@ nav a:active {
   }
 }
 
-.left {display:flex;
-  flex-wrap:wrap;
+@media only screen and (max-width: 400px) {
+  .center-text {
+    display: none;
   }
+}
 
-.right {display:flex;
-    flex-wrap:wrap;
-    }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  background-color: rgb(233, 218, 135);
+  
+}
+.left a {
+  text-decoration: none;
+}
+.left a:hover {
+  
+  color: #e01fb0;
+}
+
+
+.right {
+  flex: 1;
+  border: 5px solid rgb(231, 15, 15);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #e01fb0;
+}
+
+h3 {
+  color: #e01fb0;
+}
+ul li {
+  color: rgb(211, 88, 109);
+  font-family: Calibri, sans-serif;
+  font-size: 1.2rem;
+}
+
+.copyright{
+  background-color: #a59c9a;
+  text-align: center;
+  color: rgb(245, 239, 238);
+  padding: 20px;
+  margin: 0;
+   
+}
