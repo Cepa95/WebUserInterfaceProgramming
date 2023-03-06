@@ -46,8 +46,6 @@ nav a:active {
   height: auto;
   /* background-image: url("../images/fruits.jpg"); */
   background-size: cover;
- 
-
 }
 
 .center-text p {
@@ -58,7 +56,7 @@ nav a:active {
   z-index: 1;
   color: #edeed4;
   text-align: center;
-  font-family: 'Tilt Warp',cursive;
+  font-family: "Tilt Warp", cursive;
   font-size: 50px;
 }
 
@@ -81,7 +79,6 @@ nav a:active {
     z-index: 1;
     color: #edeed4;
     text-align: center;
-    
   }
   #apple {
     display: none;
@@ -99,7 +96,6 @@ nav a:active {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: rgb(233, 218, 135);
-  
 }
 
 .left {
@@ -151,6 +147,17 @@ ul li {
   margin: 0;
   padding: 0;
   justify-content: center;
+}
 
+table th {
+  text-align: center;
+  background-color: rgb(119, 105, 28);
+}
+table td {
+  text-align: center;
+  background-color: rgb(187, 164, 35);
+}
 
+article img {
+  float: left;
 }
