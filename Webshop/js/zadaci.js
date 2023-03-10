@@ -44,6 +44,22 @@
 //   return parseInt(first);
 // }
 
+// function season(month) {
+//   if (!Number.isInteger(month)) {
+//     alert("nije unesen integer");
+//   } else if (month >= 1 && month <= 3) {
+//     alert("Zima");
+//   } else if (month >= 4 && month <= 6) {
+//     alert("Proljeće");
+//   } else if (month >= 7 && month <= 9) {
+//     alert("Ljeto");
+//   } else if (month >= 10 && month <= 12) {
+//     alert("Jesen");
+//   } else {
+//     alert("Krivo unešeni podaci");
+//   }
+// }
+
 //1
 // //arithmetic_middle();
 //2
@@ -54,4 +70,6 @@
 //3
 // const first = parseInt(prompt("Unesite broj: "));
 // console.log(first_digit(first));
-
+//4
+// const month = parseInt(prompt("Unesite mjesec putem brojevnog zapisa"));
+// season(month);
