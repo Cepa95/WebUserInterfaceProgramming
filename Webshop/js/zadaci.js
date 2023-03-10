@@ -37,8 +37,21 @@
 //   console.log(solution);
 // }
 
+// function first_digit(first) {
+//   while (first >= 10) {
+//     first /= 10;
+//   }
+//   return parseInt(first);
+// }
+
+//1
 // //arithmetic_middle();
+//2
 // const first = parseFloat(prompt("Unesite prvi broj: "));
 // const second = parseFloat(prompt("Unesite drugi broj: "));
 // let operation = prompt("Unesite operaciju: ");
 // math_operations(first, second, operation);
+//3
+// const first = parseInt(prompt("Unesite broj: "));
+// console.log(first_digit(first));
+
