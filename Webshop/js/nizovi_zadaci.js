@@ -106,3 +106,15 @@ const webshop = [
 //   return sum + article.kolicina;
 // }, 0);
 // console.log(totalQuantity);
+
+// zadatak4
+// const allProducts = webshop.map((product) => {
+//   return product.naziv_proizvoda;
+// });
+// console.log(allProducts);
+
+// zadatak5
+// const checkNumber = (num) => num >= 0 ? 1 : 0
+// console.log(checkNumber(10))
+// console.log(checkNumber(-10))
+
