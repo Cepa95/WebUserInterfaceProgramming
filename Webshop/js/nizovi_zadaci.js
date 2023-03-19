@@ -118,3 +118,12 @@ const webshop = [
 // console.log(checkNumber(10))
 // console.log(checkNumber(-10))
 
+// const checkIsEven = (num) => num % 2 == 0 ? "Paran" : "Neparan"
+// console.log(checkIsEven(10))
+// console.log(checkIsEven(9))
+
+// const cubeNum = (num) => { return num**3; }
+// console.log(cubeNum(5))
+
+// const helloWorld = () => { console.log("Hello World!"); }
+// helloWorld();
