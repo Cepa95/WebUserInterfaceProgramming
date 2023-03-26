@@ -48,3 +48,17 @@
 //   return print();
 // }
 // console.log(`Ispis closure funkcije: ${closure()}`);
+
+
+// // zadatak4
+// function sum(a){
+//     return (b, c) => {
+//     return a * b * c
+//     }
+//     }
+//     let x = sum(10);
+//     console.log(x(3,12));
+//     // ili
+//     console.log(sum(10)(3,12));
+
+// zadatak5
