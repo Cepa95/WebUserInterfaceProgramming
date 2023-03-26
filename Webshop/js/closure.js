@@ -62,22 +62,21 @@
 //     console.log(sum(10)(3,12));
 
 // zadatak5
-
 const multiplication = (num) => {
-    const recursive = (number) => {
+    const pseudoRecursive = (number) => {
         if ( number > 0 && number < 20) {
             num *= number;
-            return recursive;
+            return pseudoRecursive; // nemaju () jer je to vise referenca na sebe u ovom slucaju, nego poziv => currying
         }
         if (number != undefined)
         {
-            return recursive; // u slucaju, da ima sta u zagradi, ali broj nije unutar trazenog
+            return pseudoRecursive; // u slucaju, da ima sta u zagradi, ali broj nije unutar trazenog
         }
         else { 
             return num; // zavrsi rekurziju
         }
     }
-    return recursive; // u slucaju da neman num, da mi vrati undefined umjesto errora
+    return pseudoRecursive; // u slucaju da neman num, da mi vrati undefined umjesto errora
 }
 
 const sum = multiplication(1)(10)(2)(5)(100)(2)(); // prva zagrada mora biti jedan, a zadnja prazna => currying
