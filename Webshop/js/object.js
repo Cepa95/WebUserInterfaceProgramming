@@ -72,6 +72,8 @@
 // Kolegij2.info();
 
 // //zadatak5
+// // zadatak6
+
 
 // function Kolegij(godina, semestar, kol1, kol2, predmet){
 
@@ -99,4 +101,8 @@
 // // console.log(Kolegij2)
 // console.log(`Student ${Kolegij2.ime} ${Kolegij2.prezime} ima ${Kolegij2.ocjena_rez}%.`)
 
-// zadatak6
+// delete Kolegij2.prezime;
+// delete Kolegij2.ime;
+// delete Kolegij2.status;
+// console.log(Kolegij2)
+
