@@ -19,4 +19,21 @@
 // }
 // console.log(`Postotak ostvaren na kolegiju => ${gradeCurry(50)(80)(80)}`);
 
+// // zadatak2
+// const gradeSubject = (subject) => (points) => (total) => {
+//   const percentage = ((points / total) * 100).toFixed(2);
+//   console.log(`Iz kolegija ${subject} ostvarili ste ${percentage}%.`);
+// };
+// gradeSubject("PWKS")(25)(35);
 
+// function gradeSub(subject) {
+//   return function (points) {
+//     return function (total) {
+//       const percentage = ((points / total) * 100).toFixed(2); // na dvije decimale
+//       console.log(`Iz kolegija ${subject} ostvarili ste ${percentage}%.`);
+//     };
+//   };
+// }
+// gradeSub("PWKS")(25)(35);
+
+// zadatak3
