@@ -37,3 +37,66 @@
 // gradeSub("PWKS")(25)(35);
 
 // zadatak3
+
+
+// // zadatak4
+
+// function Kolegij(godina, semestar, kol1, kol2, predmet){
+
+//     this.year = godina;
+//     this.term = semestar;
+//     this.colloquim1 = kol1;
+//     this.colloquim2 = kol2;
+//     this.ocjena_rez = kol1*0.5 + kol2*0.5;
+//     this.predmet = predmet;
+//     this.ocjena = function () {
+//         //  return (this.colloquim1*0.5 + this.colloquim2*0.5);
+//         console.log(`Postotak riješenosti kolokvija: ${this.ocjena_rez}`);
+//     }
+//     // this.ocjena = () => {
+//     //     console.log(`Postotak riješenosti kolokvija: ${this.ocjena_rez}`);
+//     //   };
+//     this.info = function () {
+//         console.log(`Student na predmetu ${this.predmet}, ${this.year} godina, ${this.term} semestar, je ostvario ${this.ocjena_rez}%.`)
+
+//     }
+
+// }
+
+// // const Kolegij1 = new Kolegij ('prva', 'drugi', 80, 80, 'PWKS')
+// // Kolegij1.ocjena();
+// // Kolegij1.info();
+
+// const Kolegij2 = new Kolegij ('druga', 'treca', 70, 80, 'PWKS')
+// Kolegij2.ocjena();
+// Kolegij2.info();
+
+// //zadatak5
+
+// function Kolegij(godina, semestar, kol1, kol2, predmet){
+
+//     this.year = godina;
+//     this.term = semestar;
+//     this.colloquim1 = kol1;
+//     this.colloquim2 = kol2;
+//     this.ocjena_rez = kol1*0.5 + kol2*0.5;
+//     this.predmet = predmet;
+//     this.ocjena = function () {
+//         console.log(`Postotak riješenosti kolokvija: ${this.ocjena_rez}`);
+//     }
+//     this.info = function () {
+//         console.log(`Student na predmetu ${this.predmet}, ${this.year} godina, ${this.term} semestar, je ostvario ${this.ocjena_rez}%.`)
+
+//     }
+
+// }
+// const Kolegij2 = new Kolegij ('druga', 'treca', 70, 80, 'PWKS')
+// Kolegij2.ocjena();
+// Kolegij2.info();
+// Kolegij2.ime = "Josip"
+// Kolegij2.prezime = "Čeprnić"
+// Kolegij2.status = "Izvanredni"
+// // console.log(Kolegij2)
+// console.log(`Student ${Kolegij2.ime} ${Kolegij2.prezime} ima ${Kolegij2.ocjena_rez}%.`)
+
+// zadatak6
