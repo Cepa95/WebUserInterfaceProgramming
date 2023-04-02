@@ -38,6 +38,43 @@
 
 // zadatak3
 
+// function mnozi(x) {
+//   return function (y) {
+//     if (y === undefined) {
+//       return x;
+//     }
+//     const lastEven = y % 10;
+//     if (lastEven % 2 === 0 && y != 0) {
+//       return mnozi(x * y);
+//     } else {
+//       return mnozi(x);
+//     }
+//   };
+// }
+// console.log(mnozi(2)(5)(13)(10)(14)(177)(4)(0)());
+
+// function mnozi(x) {
+//   return function (y) {
+//     if (y === undefined) {
+//       return x;
+//     }
+//     let even = 0;
+//     while (y != 0) {
+//       let lastEven = y % 10;
+//       if (lastEven % 2 == 0 && lastEven != 0) {
+//         even = lastEven;
+//         break;
+//       }
+//       y = parseInt(y / 10);
+//     }
+//     if (even !== 0 && y != 0) {
+//       return mnozi((x + y) * even);
+//     } else {
+//       return mnozi(x);
+//     }
+//   };
+// }
+// console.log(mnozi(2)(5)(13)(10)(14)(177)(4)(0)());
 
 // // zadatak4
 
@@ -74,7 +111,6 @@
 // //zadatak5
 // // zadatak6
 
-
 // function Kolegij(godina, semestar, kol1, kol2, predmet){
 
 //     this.year = godina;
@@ -105,4 +141,3 @@
 // delete Kolegij2.ime;
 // delete Kolegij2.status;
 // console.log(Kolegij2)
-
