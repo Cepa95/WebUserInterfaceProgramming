@@ -42,14 +42,14 @@ class Auto {
     return this.#priceWithVAT();
   }; // return u viticastim
 
-//   autoData() {
-//     return {
-//       brand: this.#brand,
-//       model: this.#model,
-//       color: this.#color,
-//       price: this.#price,
-//     };
-//   } //jedan od nacina za dohvacanje vrijednosti objekta stvaranjem objekta s vise svojstava
+  //   autoData() {
+  //     return {
+  //       brand: this.#brand,
+  //       model: this.#model,
+  //       color: this.#color,
+  //       price: this.#price,
+  //     };
+  //   } //jedan od nacina za dohvacanje vrijednosti objekta stvaranjem objekta s vise svojstava
 }
 
 const firstCar = new Auto("BMW", "XM", "blue", 20000);
@@ -60,7 +60,7 @@ const firstCar = new Auto("BMW", "XM", "blue", 20000);
 // console.log(firstCar.getBrand())
 // console.log(firstCar.autoData().brand)
 
-// const { brand, model, color, price } = firstCar.autoData(); 
+// const { brand, model, color, price } = firstCar.autoData();
 // console.log(brand, model, color, price);
 
 // console.log(firstCar.getDefault())
@@ -70,3 +70,5 @@ const secondCar = new Auto("Audi", "A1", "white", 15000);
 // console.log(firstCar.brand) // sa Object.defineProperty jedan od nacina za get i set
 // firstCar.brand = "FIAT"
 // console.log(firstCar.brand)
+
+function AutoFactory() {}
