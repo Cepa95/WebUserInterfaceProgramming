@@ -71,4 +71,45 @@ const secondCar = new Auto("Audi", "A1", "white", 15000);
 // firstCar.brand = "FIAT"
 // console.log(firstCar.brand)
 
-function AutoFactory() {}
+function AutoFactory(brand, model, color, price) {
+    let defaultVariable = "default";
+  
+    function priceWithVAT() {
+      return price * 1.25;
+    }
+  
+    return {
+      getBrand: () => brand,
+      getModel: () => model,
+      getColor: () => color,
+      getPrice: () => price,
+      getDefault: () => defaultVariable,
+  
+      setBrand: (newBrand) => (brand = newBrand),
+      setModel: (newModel) => (model = newModel),
+      setColor: (newColor) => (color = newColor),
+      setPrice: (newPrice) => (price = newPrice),
+      setDefault: (newDefault) => (defaultVariable = newDefault),
+  
+      getPriceWithVAT: () => priceWithVAT(),
+    //   getPriceWithVAT: function() {
+    //     return priceWithVAT();
+    //   },
+  
+      autoData: () => ({
+        brand,
+        model,
+        color,
+        price,
+      })
+    };
+  }
+  
+  const thirdCar = AutoFactory("Toyota", "Corolla", "red", 10000);
+  console.log(thirdCar.getBrand()); 
+  console.log(thirdCar.getPrice()); 
+  thirdCar.setBrand("Honda");
+  console.log(thirdCar.getBrand()); 
+  console.log(thirdCar.autoData()); 
+  console.log(thirdCar.getPriceWithVAT());
+  
