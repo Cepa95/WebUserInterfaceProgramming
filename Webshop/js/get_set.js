@@ -22,12 +22,17 @@ class Auto {
     //     }
     // })
   }
+  get getBrand2() {return this.#brand}
   getBrand = () => this.#brand; // jedna linija ne tribaju viticaste
   getModel = () => this.#model;
   getColor = () => this.#color;
   getPrice = () => this.#price;
   getDefault = () => this.#defaultVariable;
 
+  /**
+   * @param {string} brand
+   */
+  set setBrand2(brand) {this.#brand = brand}
   setBrand = (brand) => (this.#brand = brand); // jedna linija ne tribaju viticaste
   setModel = (model) => (this.#model = model);
   setColor = (color) => (this.#color = color);
@@ -113,3 +118,5 @@ function AutoFactory(brand, model, color, price) {
   console.log(thirdCar.autoData()); 
   console.log(thirdCar.getPriceWithVAT());
   
+  firstCar.setBrand2 = "Ford"
+  console.log(firstCar.getBrand2)
