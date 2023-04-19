@@ -69,3 +69,10 @@
 // osoba2.greet()
 
 // 5 zadatak
+// function isOnlyLetters(str){
+//     const regex = /^[a-zA-Z]+$/
+//     return str.match(regex)  ? true : false
+// }
+// console.log(isOnlyLetters("Hello"));
+// console.log(isOnlyLetters("Hello123"));
+   
