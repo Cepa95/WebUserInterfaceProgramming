@@ -1,0 +1,15 @@
+
+/* 1. zadatak */
+.sec_class {
+    background-color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .sec_class h2 {
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+
