@@ -71,3 +71,67 @@
 // let moto = new Motorcycle("Honda", 2020, "sportski");
 // moto.drive(); // Vozim marku vozila Honda godište 2020
 // moto.driveFast(); // Vozim motocikl tipa sportski, marke Honda i godište 2020 brzo!
+
+//zadatak3
+
+class Employee {
+  constructor(firstName, lastName, email, grade = -1) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.grade = grade;
+  }
+  employee() {
+    console.log(`${this.firstName} ${this.lastName} ${this.email}`);
+  }
+  employeeGrade(grade) {
+    this.grade = grade;
+  }
+}
+// const emp = new Employee("john", "Doe", "nesto@gmail.com");
+// emp.employee();
+
+class Programer extends Employee {
+  constructor(firstName, lastName, email, language) {
+    super(firstName, lastName, email);
+    this.language = language;
+  }
+  employee() {
+    console.log(
+      `${this.firstName} ${this.lastName}, email: ${this.email}, programski jezik: ${this.language}`
+    );
+  }
+}
+
+class Designer extends Programer {
+  constructor(firstName, lastName, email, software) {
+    super(firstName, lastName, email);
+    this.software = software;
+  }
+  employee() {
+    console.log(
+      `${this.firstName} ${this.lastName}, email: ${this.email}, softver: ${this.software}`
+    );
+  }
+}
+
+// Kreiranje instance za klasu "Zaposlenik"
+const zaposlenik1 = new Employee("Pero", "Perić", "pero.peric@example.com", 4);
+zaposlenik1.employee(); // Ispisuje "Pero Perić, email: pero.peric@example.com"
+zaposlenik1.employeeGrade(4);
+// Kreiranje instance za klasu "Programer"
+const programer1 = new Programer(
+  "Marko",
+  "Markić",
+  "marko.markic@example.com",
+  "JavaScript"
+);
+programer1.employee(); // Ispisuje "Marko Markić, email: marko.markic@example.com, programski jezik: JavaScript"
+// Kreiranje instance za klasu "Dizajner"
+const dizajner1 = new Designer(
+  "Ana",
+  "Anić",
+  "ana.anic@example.com",
+  "Adobe Photoshop"
+);
+dizajner1.employee(); // Ispisuje "Ana Anić, email: ana.anic@example.com, softver: AdobePhotoshop
