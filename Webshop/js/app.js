@@ -26,9 +26,19 @@
 // }
 
 // // zadatak5
-function changeBackgroundColor() {
-  const random = Math.floor(Math.random() * 256);
-  const random1 = Math.floor(Math.random() * 256);
-  const random2 = Math.floor(Math.random() * 256);
-  document.body.style.backgroundColor = `rgb(${random},${random1},${random2})`;
-}
+// function changeBackgroundColor() {
+//   const random = Math.floor(Math.random() * 256);
+//   const random1 = Math.floor(Math.random() * 256);
+//   const random2 = Math.floor(Math.random() * 256);
+//   document.body.style.backgroundColor = `rgb(${random},${random1},${random2})`;
+// }
+
+// // zadatak6
+// function changeText() {
+//   document.getElementById("text").innerHTML = "Neki proizvoljni tekst";
+// }
+
+// // zadatak7
+// function changePicture(){
+//     document.getElementById("jagoda").src = "../images/banana.jpg";
+// }
