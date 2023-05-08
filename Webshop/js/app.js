@@ -26,6 +26,9 @@
 // }
 
 // // zadatak5
-function changeBackgroundColor(){
-    
+function changeBackgroundColor() {
+  const random = Math.floor(Math.random() * 256);
+  const random1 = Math.floor(Math.random() * 256);
+  const random2 = Math.floor(Math.random() * 256);
+  document.body.style.backgroundColor = `rgb(${random},${random1},${random2})`;
 }
