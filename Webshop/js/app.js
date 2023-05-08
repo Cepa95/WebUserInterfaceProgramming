@@ -42,3 +42,10 @@
 // function changePicture(){
 //     document.getElementById("jagoda").src = "../images/banana.jpg";
 // }
+
+// // zadatak8
+// function addParagraph() {
+//   const paragraf = document.createElement("p");
+//   paragraf.innerHTML = "ovo je novi paragraf";
+//   document.getElementById("paragrafi").appendChild(paragraf);
+// }
