@@ -28,7 +28,7 @@
 //       if (check > 50) {
 //         resolve(`Vrijeme je sunčano u ${city}.`);
 //       } else {
-//         reject(`Vrijeme nije sunčano u ${city}.`);
+//         reject(new Error(`Vrijeme nije sunčano u ${city}.`));
 //       }
 //     }, 2000);
 //   });
@@ -70,16 +70,26 @@
 
 // // zadatak5
 
-// function calculateSum(first,second){
-//     return new Promise((resolve) => setTimeout(() => resolve(first+second), 3000))
+// function calculateSum(first, second) {
+//   return new Promise((resolve) =>
+//     setTimeout(() => resolve(first + second), 2000)
+//   );
 // }
 
-// async function calculateAndPrintSum(first,second){
-//     const sum= await calculateSum(first,second);
-//     console.log(sum);
+// async function calculateAndPrintSum(first, second) {
+//   try {
+//     if (typeof first === "number" && typeof second === "number") {
+//       const sum = await calculateSum(first, second);
+//       console.log(sum);
+//     } else {
+//       throw new Error("Both arguments must be numbers");
+//     }
+//   } catch (err) {
+//     console.error(err);
+//   }
 // }
 
-// calculateAndPrintSum(5, 3);
+// calculateAndPrintSum("ja", 3);
 
 // // zadatak6
 // function checkNumber(number) {
@@ -99,3 +109,13 @@
 //   .catch(() => {
 //     console.error("Broj je neparan");
 //   });
+
+// function add(first, second, callback) {
+//   callback(first + second);
+// }
+
+// function print(sum) {
+//   console.log(sum);
+// }
+
+// add(1, 5, print);
