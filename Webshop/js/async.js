@@ -41,3 +41,29 @@
 //   .catch((error) => {
 //     console.error(error);
 //   });
+
+// // zadatak3
+// function delay(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+
+// async function example() {
+//   console.log("Prije čekanja");
+//   await delay(5000); // čeka 2 sekunde
+//   console.log("Nakon čekanja");
+// }
+
+// example();
+
+// // zadatak4
+// function getData(callback) {
+//   setTimeout(function () {
+//     const data = { message: "Ovo su podaci" };
+//     callback(data);
+//   }, 4000);
+// }
+// function processData(data) {
+//   console.log("Obrada podataka:", data.message);
+// }
+// getData(processData);
+// console.log("Nastavak izvršavanja");
