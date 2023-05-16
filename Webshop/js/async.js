@@ -81,3 +81,21 @@
 
 // calculateAndPrintSum(5, 3);
 
+// // zadatak6
+// function checkNumber(number) {
+//   return new Promise((resolve) => {
+//     if (number % 2 == 0) {
+//       resolve();
+//     } else {
+//       reject();
+//     }
+//   });
+// }
+
+// checkNumber(5)
+//   .then(() => {
+//     console.log("Broj je paran");
+//   })
+//   .catch(() => {
+//     console.error("Broj je neparan");
+//   });
