@@ -67,3 +67,17 @@
 // }
 // getData(processData);
 // console.log("Nastavak izvršavanja");
+
+// // zadatak5
+
+// function calculateSum(first,second){
+//     return new Promise((resolve) => setTimeout(() => resolve(first+second), 3000))
+// }
+
+// async function calculateAndPrintSum(first,second){
+//     const sum= await calculateSum(first,second);
+//     console.log(sum);
+// }
+
+// calculateAndPrintSum(5, 3);
+
