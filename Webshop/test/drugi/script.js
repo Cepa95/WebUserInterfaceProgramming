@@ -81,3 +81,47 @@
 // const k = new Interest(100, 2.5);
 // console.log(`Stanje računa je ${k.getBalance()}`);
 // console.log(`Stanje s kamatom je ${k.getInterest(2.5)}`);
+
+//zadatak 2
+// function changeBackgroundColor() {
+//   document.body.style.backgroundColor = "red";
+// }
+
+// const p = document.getElementsByTagName("p");
+// for (i = 0; i < p.length; i++) {
+//   p[i].style.fontSize = "12px";
+// }
+
+//zadatak 3
+// function trianglePerimeter(first, second, third) {
+//   return new Promise(function (resolve, reject) {
+//     if (typeof first == "number" && typeof second == "number" && typeof third == "number") {
+//       resolve(first + second + third);
+//     } else {
+//       reject("Error");
+//     }
+//   });
+// }
+
+// trianglePerimeter(10, 5, 10)
+//   .then(function (perimeter) {
+//     console.log(perimeter);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
+
+
+
+// function trianglePerimeter(first, second, third) {
+//   return new Promise(function (resolve, reject) {
+//     if (typeof first === "number" && typeof second === "number" && typeof third === "number") {
+//       const sum = first + second + third;
+//       resolve(sum);
+//     } else {
+//       reject("Error");
+//     }
+//   });
+// }
+
+// trianglePerimeter(12, 3, "b").then(console.log).catch(console.log);
