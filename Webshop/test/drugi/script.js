@@ -226,3 +226,66 @@
 // }
 
 
+
+// function Vozilo(marka, godinaProizvodnje){
+//     this.marka = marka;
+//     this.godinaProizvodnje = godinaProizvodnje;
+// }
+
+// Vozilo.prototype.vozi = function() {
+//     console.log(`Vozim ${this.marka} vozilo godiste ${this.godinaProizvodnje}`);
+// }
+
+// const vozilo = new Vozilo('Toyota',1995);
+// vozilo.vozi()
+
+// function Automobil(marka, godinaProizvodnje, boja, brojVrata){
+//     Vozilo.call(this, marka, godinaProizvodnje);
+//     this.boja = boja;
+//     this.brojVrata = this.brojVrata;
+// }
+
+// Automobil.prototype = Object.create(Vozilo.prototype)
+// Automobil.prototype.constructor = Vozilo
+
+// Automobil.prototype.parkiraj = function(){
+//     console.log(`Automobil ${this.marka} ${this.boja} boje je parkiran`)
+// }
+
+
+// const auto = new Automobil('Fiat', 1990, 'plava', 10)
+// auto.vozi()
+// auto.parkiraj()
+
+
+class Vozilo{
+
+    constructor(marka, godinaProizvodnje){
+        this.marka = marka;
+        this.godinaProizvodnje = godinaProizvodnje
+    }
+}
+
+Vozilo.prototype.vozi = function() {
+    console.log(`Vozim ${this.marka} vozilo godiste ${this.godinaProizvodnje}`);
+}
+
+// const vozilo = new Vozilo('Toyota',1995);
+// vozilo.vozi()
+
+class Automobil extends Vozilo{
+    constructor(marka, godinaProizvodnje, boja, brojVrata){
+        super(marka, godinaProizvodnje);
+        this.boja = boja;
+        this.brojVrata = brojVrata
+    }
+}
+
+Automobil.prototype.parkiraj = function(){
+    console.log(`Automobil ${this.marka} ${this.boja} boje je parkiran`)
+}
+
+
+const auto = new Automobil('Fiat', 1990, 'plava', 10)
+auto.vozi()
+auto.parkiraj()
