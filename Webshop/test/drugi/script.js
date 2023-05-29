@@ -201,5 +201,28 @@
 // checkNumber(10)
 
 
+// function hello(broj){
+//     return new Promise((resolve, reject) =>{
+
+//         if (typeof broje === 'number' ){
+//             resolve(broj)
+//         }
+//         else{
+//             reject(broj)
+//         }
+//     } )
+// }
+
+
+// // hello('jabuka').then(console.log).catch(console.log)
+// // hello('jabuka').then((broj)=> {console.log(broj)}).catch((broj) => {console.log(broj)})
+
+
+// function changeBackgroundColor() {
+//     const p = document.getElementsByTagName('p');
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.backgroundColor = 'blue';
+//     }
+// }
 
 
