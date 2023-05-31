@@ -342,7 +342,6 @@ function replace() {
   parent.replaceChild(para, document.getElementById("replace"));
 }
 
-
 // class State{
 //   constructor(state) {
 //     this.state = state;
@@ -385,3 +384,13 @@ function replace() {
 // const city = new City('Madarska', 'Europa', 'Budimpesta')
 // city.consoleCity()
 // city.consoleState()
+
+function sleep(milliseconds) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
+async function fun() {
+  console.log("Hello World");
+  await sleep(2000);
+  console.log("pozdrav");
+}
+fun();
