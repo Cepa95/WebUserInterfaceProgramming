@@ -150,8 +150,6 @@
 // building.numberOfApartments(10);
 // building.numberOfSpaces(20);
 
-
-
 // function checkNumber(number) {
 
 //   return new Promise((resolve,reject)=> {
@@ -167,7 +165,6 @@
 
 // checkNumber(11).then(console.log).catch(console.log);
 
-
 // function multiply(a,b, callback){
 
 //     return callback(a,b)
@@ -180,7 +177,6 @@
 
 // console.log(multiply(10,3,sum))
 
-
 // function waitTime() {
 //     return new Promise((resolve) => {
 //       setTimeout(function() {
@@ -189,8 +185,7 @@
 //       }, 5000);
 //     });
 //   }
-  
-  
+
 // async function checkNumber(number) {
 
 //     console.log(number)
@@ -199,7 +194,6 @@
 // }
 
 // checkNumber(10)
-
 
 // function hello(broj){
 //     return new Promise((resolve, reject) =>{
@@ -213,10 +207,8 @@
 //     } )
 // }
 
-
 // // hello('jabuka').then(console.log).catch(console.log)
 // // hello('jabuka').then((broj)=> {console.log(broj)}).catch((broj) => {console.log(broj)})
-
 
 // function changeBackgroundColor() {
 //     const p = document.getElementsByTagName('p');
@@ -224,8 +216,6 @@
 //         p[i].style.backgroundColor = 'blue';
 //     }
 // }
-
-
 
 // function Vozilo(marka, godinaProizvodnje){
 //     this.marka = marka;
@@ -252,40 +242,146 @@
 //     console.log(`Automobil ${this.marka} ${this.boja} boje je parkiran`)
 // }
 
+// const auto = new Automobil('Fiat', 1990, 'plava', 10)
+// auto.vozi()
+// auto.parkiraj()
+
+// class Vozilo{
+
+//     constructor(marka, godinaProizvodnje){
+//         this.marka = marka;
+//         this.godinaProizvodnje = godinaProizvodnje
+//     }
+// }
+
+// Vozilo.prototype.vozi = function() {
+//     console.log(`Vozim ${this.marka} vozilo godiste ${this.godinaProizvodnje}`);
+// }
+
+// // const vozilo = new Vozilo('Toyota',1995);
+// // vozilo.vozi()
+
+// class Automobil extends Vozilo{
+//     constructor(marka, godinaProizvodnje, boja, brojVrata){
+//         super(marka, godinaProizvodnje);
+//         this.boja = boja;
+//         this.brojVrata = brojVrata
+//     }
+// }
+
+// Automobil.prototype.parkiraj = function(){
+//     console.log(`Automobil ${this.marka} ${this.boja} boje je parkiran`)
+// }
 
 // const auto = new Automobil('Fiat', 1990, 'plava', 10)
 // auto.vozi()
 // auto.parkiraj()
 
-
-class Vozilo{
-
-    constructor(marka, godinaProizvodnje){
-        this.marka = marka;
-        this.godinaProizvodnje = godinaProizvodnje
-    }
+function changeSomething() {
+  // document.getElementById('paragraf').style.backgroundColor ='blue'
+  const paragraphs = document.querySelectorAll("p");
+  paragraphs.forEach(function (paragraph) {
+    paragraph.style.backgroundColor = "green";
+  });
 }
 
-Vozilo.prototype.vozi = function() {
-    console.log(`Vozim ${this.marka} vozilo godiste ${this.godinaProizvodnje}`);
+document.querySelector("input[type=number]").stepDown(5);
+
+function checkNumber(number) {
+  return new Promise((resolve, reject) => {
+    if (number % 2 == 0 && typeof number === "number") {
+      resolve(number);
+    } else reject("Broj je neparan ili je krivo unesen podatak");
+  });
 }
 
-// const vozilo = new Vozilo('Toyota',1995);
-// vozilo.vozi()
+// checkNumber(11).then(console.log).catch(console.log)
+// checkNumber(11).then( (number) => console.log(number)).catch(console.log)
 
-class Automobil extends Vozilo{
-    constructor(marka, godinaProizvodnje, boja, brojVrata){
-        super(marka, godinaProizvodnje);
-        this.boja = boja;
-        this.brojVrata = brojVrata
-    }
+// function change(){
+//   document.getElementById('paragraf').innerHTML = 'Promjena'
+// }
+
+function delayed(number) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (number >= 50) {
+        resolve(number);
+      } else {
+        reject(number);
+      }
+    }, 2000);
+  });
 }
 
-Automobil.prototype.parkiraj = function(){
-    console.log(`Automobil ${this.marka} ${this.boja} boje je parkiran`)
+delayed(59).then(console.log).catch(console.log);
+
+document.getElementById("paragraf").style.textAlign = "center";
+
+function changeList() {
+  let ul = document.getElementById("lista");
+  let ol = document.createElement("ol");
+  ol.innerHTML = ul.innerHTML;
+  ul.parentNode.replaceChild(ol, ul);
+}
+const li = document.createElement("li");
+li.innerHTML = "dodavanje teksta";
+document.getElementById("lista").appendChild(li);
+
+function deleteList() {
+  const list = document.getElementById("lista");
+  const lastListItem = list.lastElementChild;
+  list.removeChild(lastListItem);
+}
+
+function replace() {
+  const para = document.createElement("p");
+  const node = document.createTextNode("Promjena 5");
+  para.appendChild(node);
+  const parent = document.getElementById("replace").parentNode;
+  parent.replaceChild(para, document.getElementById("replace"));
 }
 
 
-const auto = new Automobil('Fiat', 1990, 'plava', 10)
-auto.vozi()
-auto.parkiraj()
+// class State{
+//   constructor(state) {
+//     this.state = state;
+//   }
+// }
+
+// State.prototype.consoleState = function(){
+//   console.log(`Drzava je ${this.state}`)
+// }
+
+// const state = new State('Hrvatska')
+// state.consoleState()
+
+// class Continent extends State{
+//   constructor(state, continent)
+//   {
+//     super(state)
+//     this.continent = continent
+//   }
+// }
+
+// Continent.prototype.consoleContinent = function(){
+//   console.log(`Drzava je ${this.state}, kontinent je: ${this.continent}`)
+// }
+// const continent = new Continent('Austrija', 'Europa')
+// continent.consoleContinent()
+// continent.consoleState()
+
+// class City extends Continent{
+//   constructor(state, continent, city){
+//     super(state, continent)
+//     this.city = city
+//   }
+// }
+
+// City.prototype.consoleCity = function(){
+//   console.log(`Drzava je ${this.state}, kontinent je: ${this.continent}, grad je ${this.city}`)
+// }
+
+// const city = new City('Madarska', 'Europa', 'Budimpesta')
+// city.consoleCity()
+// city.consoleState()
